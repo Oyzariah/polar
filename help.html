@@ -3,7 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <title>Help</title>
+  <link rel="icon" type="image/x-icon" href="/polarbear_96.ico">
   <link rel="stylesheet" href="./style.css">
+  <style>
+body {
+  overflow: hidden;
+}
+    html,body {
+  font-family: monospace, sans-serif;
+  padding: 1em 2em;
+  font-size: 18px;
+  background: #000;
+  color: #aaa
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: left;
+  font-weight: 200;
+  font-size: 4vw;
+  margin: 0, 0;
+  margin-left: 0;
+  width: 45vw;
+}
+
+@media only screen and (max-width: 600px) {
+h1 {
+    font-size: 9vw;
+    width: 85vw;
+  }
+html,body {
+  background: #ffc0cb;
+  }
+}
+  </style>
   <script>
     var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -60,45 +100,6 @@ window.onload = function() {
 };
   </script>
 
-  <style>
-body {
-  overflow: hidden;
-}
-    html,body {
-  font-family: monospace, sans-serif;
-  padding: 1em 2em;
-  font-size: 18px;
-  background: #000;
-  color: #aaa
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
-h1 {
-  text-align: left;
-  font-weight: 200;
-  font-size: 4vw;
-  margin: 0, 0;
-  margin-left: 0;
-  width: 45vw;
-}
-
-@media only screen and (max-width: 600px) {
-h1 {
-    font-size: 9vw;
-    width: 85vw;
-  }
-html,body {
-  background: #ffc0cb;
-  }
-}
-  </style>
 </head>
 <body>
 <!-- partial:index.partial.html -->
