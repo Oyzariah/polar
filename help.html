@@ -9,14 +9,6 @@
 body {
   overflow: hidden;
 }
-    html,body {
-  font-family: monospace, sans-serif;
-  padding: 1em 2em;
-  font-size: 18px;
-  background: #000;
-  color: #aaa
-}
-
 .center {
   display: flex;
   flex-direction: column;
@@ -24,6 +16,17 @@ body {
   align-items: center;
   margin-top: 100px;
 }
+
+
+html,body {
+  font-family: monospace, sans-serif;
+  padding: 1em 2em;
+  font-size: 1rem; /* Updated */
+  background: #000;
+  color: #aaa
+}
+
+
 
 h1 {
   text-align: left;
@@ -35,12 +38,13 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
-h1 {
-    font-size: 9vw;
+  h1 {
+    font-size: 5rem; /* Updated */
     width: 85vw;
   }
-html,body {
-  background: #ffc0cb;
+  html,body {
+    background: #ffc0cb;
+    font-size: 2rem; /* Updated */
   }
 }
   </style>
